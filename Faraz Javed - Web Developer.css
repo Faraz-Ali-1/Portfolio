@@ -314,11 +314,15 @@ main{
 .about-container{
     background-color: var(--secondary-bg-color);
     min-width: var(--content-min-width);
+    padding: 0rem 1.2rem;
 }
 .about{
+    border-left: 2px solid var(--buttonblue-color);
+    border-right: 2px solid var(--buttonblue-color);
+
     max-width: var(--content-max-width);
     margin: auto;
-    padding: 7rem 1.2rem;
+    padding: 6rem 0;
 }
 .about-title{
     font-size: 3rem;
@@ -387,6 +391,7 @@ main{
     min-width: var(--content-min-width);
     margin: auto;
     padding: 8rem 1.2rem;
+    
 }
 .skill-title{
     text-align: center;
@@ -410,21 +415,29 @@ main{
     background-color: rgb(20, 20, 20);
     border-radius: 8px;
     margin-bottom: 0.4rem;
-    border: 2px solid black;
+    border: 1px solid black;
+    filter: grayscale(100%);
     transition: 0.3s;
+}
+.img-container:hover{
+    filter: grayscale(0%);
 }
 
 .html:hover{
     box-shadow: 0 0 10px var(--orange-color);
+    border: 1px solid var(--orange-color);
 }
 .css:hover{
     box-shadow: 0 0 10px var(--blue-color);
+    border: 1px solid var(--blue-color);
 }
 .js:hover{
     box-shadow: 0 0 10px var(--yellow-color);
+    border: 1px solid var(--yellow-color);
 }
 .tail:hover{
     box-shadow: 0 0 10px #15ffff;
+    border: 1px solid #15ffff;
 }
 .cmd img{
     background-color: rgb(99, 99, 99);
@@ -432,12 +445,15 @@ main{
 }
 .cmd:hover{
     box-shadow: 0 0 10px var(--green-color);
+    border:  1px solid var(--green-color);
 }
 .vs:hover{
     box-shadow: 0 0 10px #15ffff;
+    border: 1px solid #15ffff;
 }
 .git:hover{
     box-shadow: 0 0 10px #6e5494;
+    border: 1px solid #6e5494;
 }
 
 .skill-hover{
@@ -503,9 +519,11 @@ main{
 
 .multi:hover{
     box-shadow: 0 0 10px red;
+    border: 1px solid red;
 }
 .problem:hover{
     box-shadow: 0 0 10px var(--yellow-color);
+    border: 1px solid var(--yellow-color);
 }
 .commun:hover{
     box-shadow: 
@@ -516,6 +534,7 @@ main{
 }
 .ethic:hover{
     box-shadow: 0 0 10px rgb(171, 171, 171);
+    border: 1px solid rgb(171, 171, 171);
 }
 .team:hover{
     box-shadow: 
@@ -526,10 +545,10 @@ main{
 }
 .client:hover{
     box-shadow: 
-    3px 0 8px rgb(0, 170, 255),
-    -3px 0 8px rgb(0, 170, 255),
-    0 3px 8px rgb(190, 229, 255),
-    0 -3px 8px rgb(190, 229, 255);
+    2px 0 8px rgb(0, 170, 255),
+    -2px 0 8px rgb(0, 170, 255),
+    0 2px 8px rgb(221, 241, 255),
+    0 -2px 8px rgb(221, 241, 255);
 }
 /* ************************ */
 /*      Skills section      */

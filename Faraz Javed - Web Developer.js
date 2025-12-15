@@ -17,11 +17,12 @@ elements.forEach((el) => observer.observe(el));
 //////////////////////// main title animation
 
 
+
 //////////////////////// skill section animation
 
 const skillObserver = new IntersectionObserver((skillEntries) => {
     skillEntries.forEach((skillEntry) => {
-        console.log(skillEntry);
+        // console.log(skillEntry);
         if(skillEntry.isIntersecting){
             skillEntry.target.classList.add('skill-show');
         } else{
