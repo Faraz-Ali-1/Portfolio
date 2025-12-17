@@ -372,7 +372,7 @@ main{
 .about{
     animation: aboutAnimation 1s ease-in-out;
     animation-timeline: scroll();
-    animation-range: 50px 120vh;
+    animation-range: 0px 120vh;
     border-left: 4px solid var(--buttonblue-color);
     border-right: 4px solid var(--buttonblue-color);
 
@@ -655,24 +655,21 @@ main{
 .pr-button{
 
 }
-.mock-graphic{
-
-}
 .sub-projects-container div:nth-child(1){
     grid-column: span 1;
     grid-row: span 16;
 }
 .sub-projects-container div:nth-child(2){
     grid-column: span 2;
-    grid-row: span 12;
+    grid-row: span 11;
 }
 .sub-projects-container div:nth-child(3){
-    grid-column: span 2;
-    grid-row: span 8;
+    grid-column: span 0;
+    grid-row: span 11;
 }
 .sub-projects-container div:nth-child(4){
-    grid-column: span 5;
-    grid-row: span 6;
+    grid-column: span 3;
+    grid-row: span 5;
 }
 
 /* ************************ */
