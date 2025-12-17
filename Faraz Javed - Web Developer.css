@@ -6,6 +6,7 @@
     --darkblue-color: #2c4cff;
     --orange-color: #ff760e;
     --green-color: #59ff0d;
+    --modern-green: #00ff88;
     --purple-color: #dc16ff;
     --yellow-color: #fff716;
     --background-color: rgb(10, 10, 10);
@@ -68,6 +69,49 @@ body{
     transform: translateY(0);
 }
 
+
+/* project section transition */
+
+.project-hidden{
+    margin: auto;
+    width: 0;
+    height: 2px;
+    opacity: 1;
+    text-align: center;
+    transition: all 1.5s ease-in-out;
+    margin-bottom: 4rem;
+}
+.project-show{
+    opacity: 1;
+    transform-origin: center;
+    width: 700px;
+    height: 2px;
+    background-color: #00ff88;
+}
+.green{
+    color: #00ff88;
+    transition: 0.7s ease-in-out;
+    font-size: 3rem;
+    cursor: pointer;
+    display: inline-block;
+}
+.green-btn{
+    background-color: transparent;
+    border: 1px solid #00ff88;
+    color: #00ff88;
+    border-radius: 8px;
+    font-size: var(--para-size);
+    padding: 0.6rem 1.2rem;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    transition: 0.7s;
+    font-weight: bolder;
+}
+.green-btn:hover{
+    background-color: #00ff88;
+    color: rgb(51, 51, 51);
+}
+
 /* ********************************* */
 /*      scroll reveal animation      */
 /* ********************************* */
@@ -108,6 +152,7 @@ nav{
     color: var(--lightblue-color);
     display: inline-block;
     cursor: pointer;
+    transition: 0.7s;
     /* background-image: linear-gradient(90deg, var(--blue-color), var(--lightblue-color), var(--purple-color), var(--blue-color)); */
     /* -webkit-background-clip: text; */
     /* background-clip: text; */
@@ -316,9 +361,20 @@ main{
     min-width: var(--content-min-width);
     padding: 0rem 1.2rem;
 }
+@keyframes aboutAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{ 
+        opacity: 1;
+    }
+}
 .about{
-    border-left: 2px solid var(--buttonblue-color);
-    border-right: 2px solid var(--buttonblue-color);
+    animation: aboutAnimation 1s ease-in-out;
+    animation-timeline: scroll();
+    animation-range: 50px 120vh;
+    border-left: 4px solid var(--buttonblue-color);
+    border-right: 4px solid var(--buttonblue-color);
 
     max-width: var(--content-max-width);
     margin: auto;
@@ -395,7 +451,7 @@ main{
 }
 .skill-title{
     text-align: center;
-    color: var(--White-color);
+    color: var(--lightblue-color);
     font-size: 2rem;
     margin-bottom: 3rem;
 }
@@ -560,7 +616,64 @@ main{
 /*     projects section     */
 /* ************************ */
 
+.projects-container{
+    margin: auto;
+    max-width: var(--content-max-width);
+    min-width: var(--content-min-width);
+    padding: 7rem 1.2rem;
+    font-family: monospace;
+}
+.sub-projects-container{
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);
+    gap: 2rem;
+}
+.project-title{
+    text-align: center;
+    color: #00ff88;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.project{
+    border: 1px solid rgb(60, 60, 60);
+    padding: 1.5rem;
+}
+.project h2{
+    font-size: 1rem;
+    color: #00ff88;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.pr-desc{
 
+}
+.pr-tech{
+
+}
+.pr-button{
+
+}
+.mock-graphic{
+
+}
+.sub-projects-container div:nth-child(1){
+    grid-column: span 1;
+    grid-row: span 16;
+}
+.sub-projects-container div:nth-child(2){
+    grid-column: span 2;
+    grid-row: span 12;
+}
+.sub-projects-container div:nth-child(3){
+    grid-column: span 2;
+    grid-row: span 8;
+}
+.sub-projects-container div:nth-child(4){
+    grid-column: span 5;
+    grid-row: span 6;
+}
 
 /* ************************ */
 /*     projects section     */
