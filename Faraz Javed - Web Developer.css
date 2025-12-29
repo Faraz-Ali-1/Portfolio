@@ -1115,6 +1115,237 @@ hr{
         background-color: var(--purple-color);
     }
 }
-@media (max-width: 768px){
+@media (max-width: 900px){
+    :root{
+        --content-min-width: 800px;
+    }
+    .hero-title{
+        font-size: 4rem;
+    }
+    .hero-container{
+        display: block;
+        text-align: center;
+    }
+    .view-work{
+        display: none;
+    }
+    .portrait-scene{
+        margin: auto;
+        margin-top: 7rem;
+    }
+    .orbits{
+        width: 130%;
+        height: 130%;
+    }
+    .footer-tag{
+        font-size: 4.5rem;
+    }
+    #backToTop{
+        display: none;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+    #backToTop img{
+        width: 0;
+        padding: 0;
+        margin: 0;
+    }
 
+}
+@media (max-width: 800px){
+    :root{
+        --content-min-width: 700px;
+    }
+    .hero-title{
+        font-size: 3rem;
+    }
+    .about-info{
+        font-size: 1rem;
+    }
+    .blob-left{
+        top: 20rem;
+        left: 7rem;
+    }
+    .blob-right{
+        top: 21rem;
+        left: 29rem;
+    }
+    .course-img{
+        width: 70px;
+    }
+    .project-img{
+        width: 55px;
+    }
+    .streak-img{
+        width: 55px;
+    }
+    .milestone-desc h2{
+        font-size: 2rem;
+        color: black;
+    }
+    .milestone-desc p{
+        color: black;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 700px){
+    :root{
+        --content-min-width: 650px;
+    }
+    .about{
+        padding: 2rem 0;
+    }
+    .about-info{
+        font-size: 0.9rem;
+    }
+    .project-show{
+        width: 500px;
+    }
+    .blob-left{
+        top: 20rem;
+        left: 7rem;
+    }
+    .blob-right{
+        top: 21rem;
+        left: 29rem;
+    }
+    hr{
+        width: 500px;
+    }
+    .course-img{
+        width: 60px;
+    }
+    .project-img{
+        width: 45px;
+    }
+    .streak-img{
+        width: 45px;
+    }
+    .milestones-container{
+        gap: 1rem;
+    }
+    .milestone-desc h2{
+        font-size: 1.8rem;
+        color: black;
+    }
+    .milestone-desc p{
+        color: black;
+        font-size: 0.8rem;
+    }
+    .blob-left{
+        top: 20rem;
+        left: 4rem;
+    }
+    .blob-right{
+        top: 21rem;
+        left: 25rem;
+    }
+    .sub-projects-container div:nth-child(1){
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .sub-projects-container div:nth-child(2){
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .sub-projects-container div:nth-child(3){
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .sub-projects-container div:nth-child(4){
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .sub-projects-container div:nth-child(5){
+        grid-column: span 4;
+        grid-row: span 1;
+    }
+    .cert img{
+        width: 200px;
+    }
+    .cert{
+       height: 400px;
+    }
+
+}
+@media (max-width: 600px){
+    :root{
+        --content-min-width: 500px;
+    }
+    .hero-title{
+        font-size: 2.5rem;
+    }
+    .cert{
+        height: 350px;
+    }
+    .cert img{
+        width: 180px;
+    }
+    .blob{
+        width: 180px;
+        height: 180px;
+    }
+    .blob-left{
+        top: 20rem;
+        left: 1rem;
+    }
+    .blob-right{
+        top: 21rem;
+        left: 17rem;
+    }
+    .course-img{
+        width: 50px;
+    }
+    .project-img{
+        width: 35px;
+    }
+    .streak-img{
+        width: 35px;
+    }
+    .milestone-desc h2{
+        font-size: 1.2rem;
+        color: black;
+    }
+    .milestone-desc p{
+        color: black;
+        font-size: 0.4rem;
+    }
+    .nav-links{
+        display: none;
+    }
+    .logo{
+        margin: auto;
+    }
+    .logo-text{
+        text-align: center;
+    }
+    .technical-skills{
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+    .interpersonal-skills{
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .project-show{
+        width: 350px;
+    }
+    .footer-tag{
+        font-size: 3rem;
+    }
+    .footer-sub{
+        font-size: 0.9rem;
+    }
+    hr{
+        width: 350px;
+    }
+    .about-info{
+        font-size: 0.8rem;
+        text-align: justify;
+    }
 }
