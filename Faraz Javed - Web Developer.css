@@ -1199,6 +1199,7 @@ hr{
     }
     .about-info{
         font-size: 0.9rem;
+        width: 80%;
     }
     .project-show{
         width: 500px;
@@ -1347,6 +1348,7 @@ hr{
     .about-info{
         font-size: 0.8rem;
         text-align: justify;
+        width: 80%;
     }
     .about{
         animation: none;
@@ -1494,3 +1496,4 @@ hr{
         margin-bottom: 4rem;
     }
 }
+
