@@ -1348,4 +1348,149 @@ hr{
         font-size: 0.8rem;
         text-align: justify;
     }
+    .about{
+        animation: none;
+    }
+}
+@media (max-width: 450px){
+    :root{
+        --content-min-width: 350px;
+    }
+    .hero-title{
+        font-size: 2rem;
+    }
+    .hero-para{
+        font-size: 0.8rem;
+        margin-bottom: 0;
+    }
+    .hero-tagline{
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .blob-left{
+        top: 20rem;
+        left: 0rem;
+    }
+    .blob-right{
+        top: 21rem;
+        left: 14rem;
+    }
+    .course-img{
+        width: 40px;
+    }
+    .project-img{
+        width: 30px;
+    }
+    .streak-img{
+        width: 30px;
+    }
+    .milestone-desc h2{
+        font-size: 1rem;
+    }
+    .milestone-desc p{
+        font-size: 0.3rem;
+    }
+    .project-show{
+        width: 250px;
+    }
+    .skillset{
+        width: 4.5rem;
+    }
+    .skillset img{
+        width: 2rem;
+    }
+    .portrait-frame{
+        width: 180px;
+        height: 250px;
+        margin-top: 0;
+    }
+    .portrait-scene{
+        width: 300px;
+        height: 300px;
+    }
+    .orbits{
+        width: 125%;
+        height: 125%;
+    }
+    .view-certificates{
+        display: none;
+    }
+    .about{
+        animation: none;
+    }
+    .milestones-container{
+        max-width: var(--content-max-width);
+        margin: auto;
+        display: block;
+        justify-content: center;
+        gap: 2rem;
+        width: fit-content;
+        align-items: center;
+    }
+    .milestone{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+    }
+    .course-img{
+        width: 50px;
+    }
+    .project-img{
+        width: 40px;
+    }
+    .streak-img{
+        width: 40px;
+    }
+    .milestone-desc h2{
+        font-size: 1.4rem;
+    }
+    .milestone-desc p{
+        font-size: 0.6rem;
+    }
+    .cert{
+        margin: auto;
+        transform: rotate(0);
+        transform-style: flat;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .cert-wrapper{
+        display: block;
+        margin: auto;
+        width: fit-content;
+        transform-style: flat;
+    }
+    .blob-left{
+        top: 20rem;
+        left: 5rem;
+    }
+    .blob-right{
+        top: 43rem;
+        left: 5rem;
+    }
+    hr{
+        width: 200px;
+        margin-bottom: 4rem;
+        margin-top: 0;
+    }
+    .social-icons{
+        flex-direction: column;
+        margin: auto;
+        gap: 1rem;
+        margin-top: 0;
+        text-align: center;
+    }
+    .social-sub-cont{
+        margin: auto;
+        gap: 1rem;
+    }
+    .footer-tag{
+        font-size: 2.2rem;
+    }
+    .footer-sub{
+        margin-bottom: 4rem;
+    }
 }
