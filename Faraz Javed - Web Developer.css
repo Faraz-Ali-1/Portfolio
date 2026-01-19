@@ -1198,6 +1198,9 @@ hr{
     :root{
         --content-min-width: 650px;
     }
+    html, body {
+    -webkit-tap-highlight-color: transparent;
+    }
     .about{
         padding: 2rem 0;
     }
@@ -1500,6 +1503,7 @@ hr{
         margin-bottom: 4rem;
     }
 }
+
 
 
 
