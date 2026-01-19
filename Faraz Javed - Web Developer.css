@@ -407,7 +407,7 @@ main{
     height: 100%;
     object-fit: cover;
     position: relative;
-    top: 50px;  
+    top: 50px; 
     backdrop-filter: blur(2px);
   }
   
@@ -1500,6 +1500,7 @@ hr{
         margin-bottom: 4rem;
     }
 }
+
 
 
 
