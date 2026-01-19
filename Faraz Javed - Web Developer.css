@@ -1154,7 +1154,9 @@ hr{
         padding: 0;
         margin: 0;
     }
-
+    html{
+        cursor: default;
+    }
 }
 @media (max-width: 800px){
     :root{
@@ -1498,6 +1500,7 @@ hr{
         margin-bottom: 4rem;
     }
 }
+
 
 
 
